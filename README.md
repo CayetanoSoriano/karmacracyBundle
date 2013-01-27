@@ -15,32 +15,12 @@ karmacracyBundle
 new cayetanosoriano\KarmacracyBundle\cayetanosorianoKarmacracyBundle(),
 ```
 
-LadybugBundle
+karmacracyBundle
 =============
 
-[![Build Status](https://secure.travis-ci.org/raulfraile/LadybugBundle.png)](http://travis-ci.org/raulfraile/LadybugBundle)
+This Bundle, gives a wrapper to [karmacracy-php](https://github.com/CayetanoSoriano/karmacracy-php.git) API lib
 
-This bundle provides an easy and extensible var_dump/print_r replacement for
-Symfony2 projects, both in controllers or Twig templates. For example, with this
-bundle, the following is possible:
 
-``` php
-<?php
-    class UserController extends Controller
-    {
-        public function userAction($username) {
-            ladybug_dump($username); // or just ld($username)
-        }
-    }
-```
-
-``` jinja
-{{ user.username|ladybug_dump }}
-```
-
-Getting as a result:
-
-<pre><strong><em>string(10)</em></strong> <span style="color:#080">"raulfraile"</span></pre>
 
 ## Installation
 
@@ -59,7 +39,7 @@ your dependencies in a `composer.json` file:
     }
 }
 ```
-To actually install Ladybug in your project, download the composer binary and run it:
+To actually install in your project, download the composer binary and run it:
 
 ``` bash
 wget http://getcomposer.org/composer.phar
