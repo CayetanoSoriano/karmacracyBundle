@@ -18,8 +18,8 @@
         "symfony/framework-bundle": ">=2.1,<2.2-dev"
     },
     "autoload": {
-        "psr-0": { "cayetanosoriano\\KarmacrazyBundle": "" }
+        "psr-0": { "cayetanosoriano\\KarmacracyBundle": "" }
     },
     "minimum-stability": "dev",
-    "target-dir": "cayetanosoriano/KarmacrazyBundle"
+    "target-dir": "cayetanosoriano/KarmacracyBundle"
 }
