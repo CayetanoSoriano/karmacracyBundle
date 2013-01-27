@@ -1,0 +1,24 @@
+{
+    "name": "cayetanosoriano/karmacracy-bundle",
+    "type": "symfony-bundle",
+    "description": "wrapper for karmacracy lib",
+    "keywords": ["karmacracy", "kcy"],
+    "homepage": "http://github.com/CayetanoSoriano/karmacracyBundle.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cayetano Soriano"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "require-dev": {
+        "symfony/framework-bundle": ">=2.1,<2.2-dev"
+    },
+    "autoload": {
+        "psr-0": { "cayetanosoriano\\KarmacrazyBundle": "" }
+    },
+    "minimum-stability": "dev",
+    "target-dir": "cayetanosoriano/KarmacrazyBundle"
+}
