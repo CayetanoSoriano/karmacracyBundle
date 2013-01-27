@@ -1,8 +1,6 @@
 karmacracyBundle
 ================
 
-[![Build Status](https://travis-ci.org/CayetanoSoriano/karmacracyBundle.png?branch=master)](https://travis-ci.org/CayetanoSoriano/karmacracyBundle)
-
 #Installation
 
 
