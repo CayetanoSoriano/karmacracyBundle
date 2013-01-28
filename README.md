@@ -1,22 +1,4 @@
 karmacracyBundle
-================
-
-#Installation
-
-
-##Composer
-
-```bash
-"cayetanosoriano/karmacracy-bundle": "dev-master"
-```
-
-##Add the following to the appkernel.php
-
-```php
-new cayetanosoriano\KarmacracyBundle\cayetanosorianoKarmacracyBundle(),
-```
-
-karmacracyBundle
 =============
 
 This Bundle, gives a wrapper to [karmacracy-php](https://github.com/CayetanoSoriano/karmacracy-php.git) API lib
@@ -25,8 +7,18 @@ This Bundle, gives a wrapper to [karmacracy-php](https://github.com/CayetanoSori
 
 ## Installation
 
-### Step 1: Install vendors
+#### Symfony 2.0.x: vendors
 
+```
+[karmacracyBundle]
+    git=http://github.com/CayetanoSoriano/karmacracyBundle.git
+    target=/bundles/RaulFraile/Bundle/LadybugBundle
+
+[karmacracy-php]
+    git=https://github.com/CayetanoSoriano/karmacracy-php.git
+    target=lib/
+
+```
 
 #### Symfony 2.1.x: Composer
 
@@ -69,4 +61,14 @@ public function registerBundles()
 ```
 
 ## Configuration
+###Add the following to your config.yml
+```
+cayetanosoriano_karmacracy:
+    keypass: "your_key_pass"
+    appkey: "your_app_key"
+```
 
+### Then use the service
+```
+$kcy = $this->get('kcy');
+```
