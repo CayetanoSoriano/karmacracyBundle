@@ -21,12 +21,10 @@ class Configuration implements ConfigurationInterface
         $rootNode = $treeBuilder->root('cayetanosoriano_karmacracy');
         $rootNode
             ->children()
-                ->scalarNode('keypass')->end()
-                ->scalarNode('appkey')->end()
+                ->scalarNode('username')->isRequired()->end()
+                ->scalarNode('keypass')->isRequired()->end()
+                ->scalarNode('appkey')->isRequired()->end()
             ->end();
-        // Here you should define the parameters that are allowed to
-        // configure your bundle. See the documentation linked above for
-        // more information on that topic.
 
         return $treeBuilder;
     }

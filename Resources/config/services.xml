@@ -9,6 +9,7 @@
 
     <services>
         <service id="kcy" class="%cayetanosoriano_kcy.class%">
+            <argument>%cayetanosoriano_karmacracy.username%</argument>
             <argument>%cayetanosoriano_karmacracy.appkey%</argument>
             <argument>%cayetanosoriano_karmacracy.keypass%</argument>
         </service>

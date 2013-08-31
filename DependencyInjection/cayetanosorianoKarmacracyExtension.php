@@ -23,8 +23,9 @@ class cayetanosorianoKarmacracyExtension extends Extension
         $config = $this->processConfiguration($configuration, $configs);
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
-        $container->setParameter('cayetanosoriano_karmacracy.keypass', $config['keypass']);
+        $container->setParameter('cayetanosoriano_karmacracy.username', $config['username']);
         $container->setParameter('cayetanosoriano_karmacracy.appkey', $config['appkey']);
+        $container->setParameter('cayetanosoriano_karmacracy.keypass', $config['keypass']);
 
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
